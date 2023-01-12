@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <style>
+        .hide{
+            display:none;
+        }
+        .show{
+            display:block;
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <div>
+        <h3 id="username" style="display: inline !important;"></h3>&nbsp;&nbsp;&nbsp;
+        <button id="logoutButton">LOGOUT</button>
+    </div>
+    <div style="margin-top:20px;">
+        <h2 class="" style="display: inline !important;">Current Balance : </h2>
+        <h2 class="balance" style="display: inline !important;">0</h2>
+    </div>
+
+    <h2>transaction history : </h2>
+    <div class="container movements">
+        
+    </div>
+
+    <div class="container sendMoney">
+        <select name="" id="sendMoneySelectBox">
+        </select>
+        <input type="number" id="sendingAmount" />
+        <button id="sendButton">Send</button>
+    </div>
+
+    <div class="summry" class="hide" style="display:none">
+        <h2>Summary : </h2>
+        <div id="debit-box">
+            <b>Debit</b> : <span id="debitTotal"></span>
+        </div>
+        <div id="credit-box">
+            <b>Credit</b> : <span id="creditTotal"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
